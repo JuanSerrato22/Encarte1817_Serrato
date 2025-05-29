@@ -9,14 +9,10 @@ namespace Entity.Model.ModelsAd
 {
     public class Provider : GenericModel
     {
-        public string CompanyName { get; set; }
-        public string Email { get; set; }
-        public string Phone { get; set; }
-        public string Direction { get; set; }
-
-        // Relación: Un proveedor puede tener muchos clientes 
-        public ICollection<Client> Clients { get; set; }
-        public int UserId { get; set; }
         public User User { get; set; }
+        public int UserId { get; set; }
+        public string TaxId { get; set; } // NIT
+        public string BusinessType { get; set; } 
+        public string ServicesProvided { get; set; }
     }
 }

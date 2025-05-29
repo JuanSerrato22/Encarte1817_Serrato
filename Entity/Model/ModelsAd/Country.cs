@@ -10,6 +10,6 @@ namespace Entity.Model.ModelsAd
     public class Country : GenericModel
     {
         public string CountryCode { get; set; }
-        public ICollection<Department> Department { get; set; }
+        public ICollection<Department> Departments { get; set; }
     }
 }

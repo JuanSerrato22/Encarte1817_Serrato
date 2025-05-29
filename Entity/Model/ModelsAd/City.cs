@@ -9,11 +9,10 @@ namespace Entity.Model.ModelsAd
 {
     public class City : GenericModel
     {
+        public int CityCode { get; set; }
         public int DeparmentId { get; set; }
         public Department Department { get; set; }
-
-        // Relación: Una ciudad puede tener muchos clientes
-        public ICollection<Client> Clientes { get; set; }
         public ICollection<Neighborhood> Neighborhoods { get; set; }
+        public ICollection<Department> Departments { get; set; }
     }
 }

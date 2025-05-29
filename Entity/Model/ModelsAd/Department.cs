@@ -13,6 +13,6 @@ namespace Entity.Model.ModelsAd
         public string DepartmentCode { get; set; }
         public int CountryId { get; set; }
         public Country Country { get; set; }
-        public ICollection<City> City { get; set; }
+        public ICollection<City> Cities { get; set; }
     }
 }
